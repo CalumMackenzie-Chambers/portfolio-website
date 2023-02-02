@@ -1,0 +1,17 @@
+---
+interface Props {
+  title?: string | undefined;
+  description?: string | undefined;
+}
+
+const { title = "Calum Dev", description = "The personal site of Calum Mackenzie-Chambers" } =
+  Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="description" property="og:description" content={description} />
+<meta name="viewport" content="width=device-width" />
+<meta name="generator" content={Astro.generator} />
+<title>{title}</title>
+
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />

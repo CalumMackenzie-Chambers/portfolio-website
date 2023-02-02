@@ -1,0 +1,21 @@
+---
+import Nav from "../components/Nav.astro";
+import Head from "../components/Head.astro";
+
+interface Props {
+  title?: string | undefined;
+  description?: string | undefined;
+}
+
+const { title, description } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <Head title={title} description={description} />
+  </head>
+  <body class="bg-gray-800">
+    <Nav />
+    <slot />
+  </body>
+</html>
