@@ -11,25 +11,3 @@
       id="bar3"></span>
   </div>
 </div>
-
-<script lang="js">
-  document.addEventListener("DOMContentLoaded", function () {
-    var hamburgerMenu = document.getElementById("hamburger-menu");
-    var bar1 = document.getElementById("bar1");
-    var bar2 = document.getElementById("bar2");
-    var bar3 = document.getElementById("bar3");
-
-    hamburgerMenu.addEventListener("click", function () {
-      bar1.classList.toggle("transform");
-      bar1.classList.toggle("-rotate-45");
-      bar1.classList.toggle("top-1/2");
-
-      bar2.classList.toggle("opacity-0");
-
-      bar3.classList.toggle("transform");
-      bar3.classList.toggle("rotate-45");
-      bar3.classList.toggle("top-1/2");
-      bar3.classList.toggle("top-6");
-    });
-  });
-</script>
