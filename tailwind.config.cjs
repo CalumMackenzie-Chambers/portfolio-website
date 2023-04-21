@@ -15,6 +15,7 @@ module.exports = {
             green: colors.emerald,
             purple: colors.indigo,
             red: colors.rose,
+            yellow: colors.yellow,
         },
         fontFamily: {
             sans: ["Montserrat", "sans-serif"],
@@ -25,5 +26,6 @@ module.exports = {
             ...defaultTheme.screens,
         },
     },
+    darkMode: "class",
     plugins: [],
 };

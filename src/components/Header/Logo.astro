@@ -1,0 +1,26 @@
+<style>
+  .cursor-blink::after {
+    content: "";
+    width: 0.15rem;
+    height: 1.2rem;
+    display: inline-block;
+    margin-top: 0.2rem;
+    align-self: flex-start;
+    animation: cursor-blink 1s steps(2) infinite;
+  }
+
+  @keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
+</style>
+
+<a href="#" class="flex items-center justify-center text-xl lg:text-lg">
+  <span class="font-bold text-gray-800 dark:text-gray-200"
+    ><i class="fa-solid fa-angle-right"></i> Calum</span
+  ><span
+    class="cursor-blink flex items-center gap-0.5 text-gray-500 after:bg-gray-500 motion-reduce:after:hidden dark:text-gray-400 dark:after:bg-gray-400"
+    >Dev</span
+  >
+</a>

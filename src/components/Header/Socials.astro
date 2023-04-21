@@ -1,0 +1,34 @@
+---
+interface Props {
+  size?: "lg" | "xl" | "2xl";
+}
+
+const { size = "lg" }: Props = Astro.props;
+
+const socialLinks: { tag: string; href: string }[] = [
+  {
+    tag: `<i class="fa-brands fa-github fa-${size}"></i>`,
+    href: "https://github.com/CalumMackenzie-Chambers/portfolio-website",
+  },
+  {
+    tag: `<i class="fa-brands fa-linkedin fa-${size}"></i>`,
+    href: "https://www.linkedin.com/in/calum-mackenzie-chambers/",
+  },
+];
+
+import Link from "../Ui/Link.astro";
+---
+
+<div class="mt-0 flex w-auto">
+  <ul class="flex flex-row">
+    {
+      socialLinks.map(({ tag, href }) => (
+        <li>
+          <Link href={href} style="nav" target="_blank">
+            <Fragment set:html={tag} />
+          </Link>
+        </li>
+      ))
+    }
+  </ul>
+</div>

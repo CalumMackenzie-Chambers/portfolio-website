@@ -1,0 +1,35 @@
+<div class="block lg:hidden">
+  <div class="relative inline-block h-6 w-8 cursor-pointer" id="hamburger-menu">
+    <span
+      class="absolute top-0 h-[0.19rem] w-full rounded bg-gray-800 transition-all duration-300 ease-in-out dark:bg-gray-200"
+      id="bar1"></span>
+    <span
+      class="absolute top-3 h-[0.19rem] w-full rounded bg-gray-800 transition-all duration-300 ease-in-out dark:bg-gray-200"
+      id="bar2"></span>
+    <span
+      class="absolute top-6 h-[0.19rem] w-full rounded bg-gray-800 transition-all duration-300 ease-in-out dark:bg-gray-200"
+      id="bar3"></span>
+  </div>
+</div>
+
+<script lang="js">
+  document.addEventListener("DOMContentLoaded", function () {
+    var hamburgerMenu = document.getElementById("hamburger-menu");
+    var bar1 = document.getElementById("bar1");
+    var bar2 = document.getElementById("bar2");
+    var bar3 = document.getElementById("bar3");
+
+    hamburgerMenu.addEventListener("click", function () {
+      bar1.classList.toggle("transform");
+      bar1.classList.toggle("-rotate-45");
+      bar1.classList.toggle("top-1/2");
+
+      bar2.classList.toggle("opacity-0");
+
+      bar3.classList.toggle("transform");
+      bar3.classList.toggle("rotate-45");
+      bar3.classList.toggle("top-1/2");
+      bar3.classList.toggle("top-6");
+    });
+  });
+</script>

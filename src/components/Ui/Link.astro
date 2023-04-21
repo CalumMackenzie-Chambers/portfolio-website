@@ -1,0 +1,41 @@
+---
+interface Props {
+  href: string;
+  size?: "sm" | "md" | "lg";
+  block?: boolean;
+  style?: "transparentPrimary" | "transparentInverted" | "btnPrimary" | "btnInverted" | "nav";
+  class?: string;
+  [x: string]: any;
+}
+
+const { href, block, size = "lg", style = "btnPrimary", class: className, ...rest } = Astro.props;
+
+const sizes = {
+  lg: "px-5 py-2.5",
+  md: "px-4 py-2",
+  sm: "",
+};
+
+const styles = {
+  transparentPrimary:
+    "rounded-full border-2 border-gray-800 bg-transparent text-gray-800 hover:bg-gray-300 dark:border-gray-200 dark:text-gray-200 dark:hover:bg-gray-600",
+  transparentInverted:
+    "rounded-full bg-transparent border-2 border-black hover:bg-gray-100 text-black",
+  btnPrimary: "rounded-full bg-black text-white hover:bg-gray-800  border-2 border-transparent",
+  btnInverted: "rounded-full bg-white text-black   border-2 border-transparent",
+  nav: "font-medium text-xl flex py-4 text-gray-700 hover:text-purple-500 dark:text-gray-200 dark:hover:text-purple-300 lg:text-base lg:px-3 lg:py-2 lg:font-normal",
+};
+---
+
+<a
+  href={href}
+  {...rest}
+  class:list={[
+    "text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200",
+    block && "w-full",
+    sizes[size],
+    styles[style],
+    className,
+  ]}
+  ><slot />
+</a>
