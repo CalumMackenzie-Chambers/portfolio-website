@@ -1,0 +1,24 @@
+---
+import Container from "../Container.astro";
+import Link from "../Ui/Link.astro";
+---
+
+<Container>
+  <section id="hero" class="flex min-h-screen flex-col justify-center p-20">
+    <p class="text-lg text-purple-600 dark:text-purple-300">Hi, my name is</p>
+    <h1 class="py-3 text-6xl font-extrabold text-gray-800 dark:text-gray-200">
+      Calum Mackenzie-Chambers.
+    </h1>
+
+    <h2 class="flex flex-col font-serif text-5xl text-gray-600 dark:text-gray-400">
+      <span>Transforming ideas into reality,</span>
+      <span>one line of code at a time.</span>
+    </h2>
+    <p class="w-[60%] py-5 text-justify text-lg leading-snug text-gray-600 dark:text-gray-400">
+      I'm a software engineer and QA Manager with 3 years of experience, specializing in creating
+      efficient and high-quality digital products. Currently, I'm working at Infuse IT while also
+      offering freelance web development services.
+    </p>
+    <Link href="#" style="transparentPrimary" class="my-2 max-w-max font-semibold">Contact Me</Link>
+  </section>
+</Container>
