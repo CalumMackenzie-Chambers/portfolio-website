@@ -10,6 +10,40 @@ interface Props {
 const { title, description } = Astro.props;
 ---
 
+<style is:global>
+  @font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Montserrat";
+    font-style: italic;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("/fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url("/fonts/Lora-VariableFont_wght.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Lora";
+    font-style: italic;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url("/fonts/Lora-Italic-VariableFont_wght.ttf") format("truetype");
+  }
+</style>
+
 <html lang="en">
   <head>
     <Head title={title} description={description} />
