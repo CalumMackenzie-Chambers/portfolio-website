@@ -1,0 +1,24 @@
+---
+import ThemeToggle from "./ThemeToggle.astro";
+import Logo from "./Logo.astro";
+import Container from "../Container.astro";
+import Hamburger from "./Hamburger.astro";
+import Nav from "./Nav.astro";
+import Socials from "./Socials.astro";
+---
+
+<header class="absolute top-0 z-50 w-full bg-transparent bg-opacity-5 shadow-lg backdrop-blur-xl">
+  <Container class="flex flex-col items-center justify-between py-5 lg:grid lg:grid-cols-3">
+    <div class="flex w-full items-center justify-between lg:w-auto" style="flex: 1 1 auto;">
+      <Logo />
+      <Hamburger />
+    </div>
+    <Nav />
+    <div class="hidden items-center justify-end lg:flex lg:w-auto" style="flex: 1 1 auto;">
+      <Socials />
+      <ThemeToggle idModifier="lg" />
+    </div>
+  </Container>
+</header>
+
+<script src="./Header.ts"></script>

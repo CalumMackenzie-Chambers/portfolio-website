@@ -1,24 +1,66 @@
 ---
+const navLinks: { label: string; href: string; target?: string }[] = [
+  { label: "About", href: "/#About" },
+  { label: "Projects", href: "/#Projects" },
+  { label: "Services", href: "/#Services" },
+  { label: "Contact", href: "/#Contact" },
+  { label: "Blog", href: "https://brain.mackenzie-chambers.co.uk/", target: "_blank" },
+];
+
+import Link from "../Ui/Link.astro";
 import ThemeToggle from "./ThemeToggle.astro";
-import Logo from "./Logo.astro";
-import Container from "../Container.astro";
-import Hamburger from "./Hamburger.astro";
-import MenuItems from "./MenuItems.astro";
 import Socials from "./Socials.astro";
 ---
 
-<header class="sticky top-0 z-50 bg-transparent bg-opacity-5 shadow-lg backdrop-blur">
-  <Container class="flex flex-col items-center justify-between py-5 lg:grid lg:grid-cols-3">
-    <div class="flex w-full items-center justify-between lg:w-auto" style="flex: 1 1 auto;">
-      <Logo />
-      <Hamburger />
-    </div>
-    <MenuItems />
-    <div class="hidden items-center justify-end lg:flex lg:w-auto" style="flex: 1 1 auto;">
-      <Socials />
-      <ThemeToggle idModifier="lg" />
-    </div>
-  </Container>
-</header>
+<style>
+  @media (max-width: theme("screens.lg")) {
+    .menu-closed {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      visibility: hidden;
+      transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    }
 
-<script src="./Header.ts"></script>
+    .menu-open {
+      max-height: 100vh;
+      opacity: 1;
+      visibility: visible;
+      transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+      margin-top: 0.5rem;
+    }
+
+    .menu-item {
+      opacity: 0;
+      transform: translateY(-100px);
+      transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    }
+
+    .menu-open .menu-item {
+      opacity: 1;
+      transform: translateY(0);
+      padding: 0.5rem 1rem;
+    }
+  }
+</style>
+
+<nav
+  class="toggle menu-closed w-full items-center justify-center lg:mt-0 lg:flex lg:w-auto"
+  style="flex: 2 1 auto;"
+>
+  <ul class="flex flex-col items-center lg:flex-row lg:gap-3">
+    {
+      navLinks.map(({ label, href, target }) => (
+        <li class="menu-item my-1 p-1 lg:my-0">
+          <Link href={href} style="nav" class="nav-link text-center" target={target || "_self"}>
+            {label}
+          </Link>
+        </li>
+      ))
+    }
+    <li class="menu-item my-1 flex items-center p-1 lg:hidden">
+      <Socials size="2xl" />
+      <ThemeToggle idModifier="mobile" scale={0.25} />
+    </li>
+  </ul>
+</nav>
