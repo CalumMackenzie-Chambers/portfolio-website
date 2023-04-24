@@ -1,0 +1,92 @@
+---
+import Container from "../Container.astro";
+import { Image } from "@astrojs/image/components";
+import headshot from "../../images/Headshot.jpg";
+---
+
+<style>
+  .scroll-animation {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition-property: opacity, transform;
+    transition-duration: 1s;
+  }
+
+  .scroll-animation.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .scroll-animation {
+      opacity: 1 !important;
+      transform: translateX(0) !important;
+      transition: none !important;
+    }
+  }
+</style>
+
+<Container>
+  <section id="about" class="flex min-h-screen flex-col p-3 lg:flex-row lg:p-20">
+    <div class="flex flex-1 flex-col justify-center">
+      <h2
+        data-delay="0"
+        class="scroll-animation text-2xl font-extrabold text-gray-800 dark:text-gray-200 md:text-3xl lg:text-4xl"
+      >
+        About Me
+      </h2>
+      <p
+        data-delay="200"
+        class="scroll-animation mt-5 text-gray-600 dark:text-gray-400 lg:text-justify"
+      >
+        I am a dedicated software engineer and QA Manager with a strong passion for web development
+        and technology. My 3 years of experience in the software industry includes diverse roles,
+        such as a Data Analyst in the finance sector and my current position at Infuse IT. This
+        background, coupled with my studies in Aeronautics and Astronautics at the University of
+        Southampton, has allowed me to develop a comprehensive skill set and a deep understanding of
+        delivering efficient, high-quality digital products and exceptional user experiences.
+      </p>
+      <p
+        data-delay="400"
+        class="scroll-animation mt-5 text-gray-600 dark:text-gray-400 lg:text-justify"
+      >
+        As a web developer, I am proficient in various programming languages and frameworks and
+        committed to staying current with the latest trends and technologies in the field. The
+        combination of my experience in software engineering, QA Management, and aerospace studies
+        has given me a unique perspective on the development process, enabling me to approach
+        challenges with creativity and innovation.
+      </p>
+    </div>
+    <div class="mt-10 flex flex-1 items-center justify-center lg:mt-0">
+      <Image
+        data-delay="600"
+        src={headshot}
+        alt="Calum Mackenzie-Chambers headshot"
+        class="scroll-animation w-3/4 rounded-full md:w-1/2 lg:w-3/4"
+      />
+    </div>
+  </section>
+</Container>
+
+<script lang="js">
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const delay = entry.target.getAttribute("data-delay") || 0;
+            entry.target.style.transitionDelay = `${delay}ms`;
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 },
+    );
+
+    const elements = document.querySelectorAll(".scroll-animation");
+    elements.forEach((element) => {
+      observer.observe(element);
+    });
+  });
+</script>
