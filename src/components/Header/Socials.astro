@@ -1,34 +1,36 @@
 ---
 interface Props {
-  size?: "lg" | "xl" | "2xl";
+  className?: string;
 }
 
-const { size = "lg" }: Props = Astro.props;
+const { className }: Props = Astro.props;
 
-const socialLinks: { tag: string; href: string }[] = [
-  {
-    tag: `<i class="fa-brands fa-github fa-${size}"></i>`,
-    href: "https://github.com/CalumMackenzie-Chambers/portfolio-website",
-  },
-  {
-    tag: `<i class="fa-brands fa-linkedin fa-${size}"></i>`,
-    href: "https://www.linkedin.com/in/calum-mackenzie-chambers/",
-  },
-];
+const list = "inline-block fill-current " + className;
 
 import Link from "../Ui/Link.astro";
+import Github from "../../images/Github.astro";
+import LinkedIn from "../../images/LinkedIn.astro";
 ---
 
 <div class="mt-0 flex w-auto">
   <ul class="flex flex-row">
-    {
-      socialLinks.map(({ tag, href }) => (
-        <li>
-          <Link href={href} style="nav" target="_blank">
-            <Fragment set:html={tag} />
-          </Link>
-        </li>
-      ))
-    }
+    <li>
+      <Link
+        href="https://github.com/CalumMackenzie-Chambers/portfolio-website"
+        style="nav"
+        target="_blank"
+      >
+        <Github className={list} />
+      </Link>
+    </li>
+    <li>
+      <Link
+        href="https://www.linkedin.com/in/calum-mackenzie-chambers/"
+        style="nav"
+        target="_blank"
+      >
+        <LinkedIn className={"inline-block fill-current " + className} />
+      </Link>
+    </li>
   </ul>
 </div>

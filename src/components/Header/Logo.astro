@@ -1,3 +1,7 @@
+---
+import ChevronRight from "../../images/ChevronRight.astro";
+---
+
 <style>
   .cursor-blink::after {
     content: "";
@@ -18,7 +22,8 @@
 
 <a href="#" class="flex items-center justify-center text-xl lg:text-lg">
   <span class="font-bold text-gray-800 dark:text-gray-200"
-    ><i class="fa-solid fa-angle-right"></i> Calum</span
+    ><ChevronRight className="inline-block h-6 fill-current pb-1 lg:h-5" />
+    Calum</span
   ><span
     class="cursor-blink flex items-center gap-0.5 text-gray-600 after:bg-gray-600 motion-reduce:after:hidden dark:text-gray-400 dark:after:bg-gray-400"
     >Dev</span
