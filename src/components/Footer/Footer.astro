@@ -1,0 +1,17 @@
+---
+import Socials from "../Header/Socials.astro";
+
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-gray-300 py-10 text-gray-200 dark:bg-gray-900">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col items-center">
+      <h3 class="mb-4 text-xl font-bold text-gray-800 dark:text-gray-200">Connect With Me</h3>
+      <Socials className="h-6" />
+      <p class="mt-4 text-sm text-gray-800 dark:text-gray-200">
+        &copy; {currentYear} Calum Mackenzie-Chambers. All Rights Reserved.
+      </p>
+    </div>
+  </div>
+</footer>
