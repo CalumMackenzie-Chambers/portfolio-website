@@ -1,0 +1,56 @@
+---
+import { Image } from "@astrojs/image/components";
+import Container from "../Container.astro";
+import Link from "../Ui/Link.astro";
+import Brain from "../../images/Brain.png";
+---
+
+<Container>
+  <section id="projects" class="flex min-h-screen flex-col p-3 lg:p-20">
+    <h2 class="text-2xl font-extrabold text-gray-800 dark:text-gray-200 md:text-3xl lg:text-4xl">
+      Latest Project
+    </h2>
+    <div class="mt-10 flex flex-col lg:flex-row">
+      <div class="flex flex-1 flex-col justify-center">
+        <h3 class="font-serif text-2xl font-bold text-purple-700 dark:text-purple-300 md:text-2xl">
+          Brain
+        </h3>
+        <p class="mt-5 text-gray-600 dark:text-gray-400">
+          Brain is an online map of everything I learn, essentially serving as documentation of my
+          life. The project is built using Docusaurus, a powerful documentation framework, and
+          hosted with Netlify. The goal of Brain is to create a comprehensive, accessible, and
+          organized knowledge base to help me reflect and grow.
+        </p>
+        <p class="mt-5 text-gray-600 dark:text-gray-400">
+          Visit the site at <a
+            href="https://brain.mackenzie-chambers.co.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-purple-700 dark:text-purple-300">brain.mackenzie-chambers.co.uk</a
+          >.
+        </p>
+      </div>
+      <div class="mt-10 flex flex-1 items-center justify-center lg:mt-0">
+        <Image src={Brain} alt="Project screenshot" class="w-full rounded-md shadow-lg" />
+      </div>
+    </div>
+    <div class="mt-10 flex flex-col items-center gap-5 md:items-start lg:flex-row">
+      <Link
+        href="https://github.com/your-username/your-repo"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="transparentPrimary"
+      >
+        Project Source Code
+      </Link>
+      <Link
+        href="https://github.com/your-username/"
+        target="_blank"
+        rel="noopener noreferrer"
+        style="transparentInverted"
+      >
+        My GitHub
+      </Link>
+    </div>
+  </section>
+</Container>
