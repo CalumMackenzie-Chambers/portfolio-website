@@ -2,54 +2,56 @@
 import Container from "../Container.astro";
 ---
 
-<Container>
-  <section id="contact" class="flex min-h-screen flex-col p-3 lg:p-20">
-    <h2 class="text-2xl font-extrabold text-gray-800 dark:text-gray-200 md:text-3xl lg:text-4xl">
-      Contact Me
-    </h2>
-    <p class="mt-5 text-gray-600 dark:text-gray-400 lg:text-justify">
-      If you have any questions, inquiries, or would like to discuss a project, feel free to reach
-      out using the form below or send me an email directly at <a
-        href="mailto:calum@mackenzie-chambers.co.uk"
-        class="text-purple-600 hover:text-purple-700 dark:text-purple-300 dark:hover:text-purple-400"
-        >calum@mackenzie-chambers.co.uk</a
-      >.
-    </p>
-    <div
-      class="mt-10 w-full self-center rounded-xl bg-white p-8 shadow-xl dark:bg-gray-800 lg:w-1/2"
-    >
-      <form name="contact" method="POST" data-netlify="true" class="flex flex-col">
-        <input type="hidden" name="form-name" value="contact" />
-        <label for="name" class="text-gray-800 dark:text-gray-200">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          class="mt-2 rounded border border-gray-300 bg-gray-100 p-2 dark:border-gray-600 dark:bg-gray-800"
-          required
-        />
-        <label for="email" class="mt-5 text-gray-800 dark:text-gray-200">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          class="mt-2 rounded border border-gray-300 bg-gray-100 p-2 dark:border-gray-600 dark:bg-gray-800"
-          required
-        />
-        <label for="message" class="mt-5 text-gray-800 dark:text-gray-200">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="6"
-          class="mt-2 rounded border border-gray-300 bg-gray-100 p-2 dark:border-gray-600 dark:bg-gray-800"
-          required></textarea>
-        <button
-          type="submit"
-          class="mt-5 rounded bg-purple-600 px-4 py-2 font-semibold text-white hover:bg-purple-700 dark:bg-purple-800 dark:hover:bg-purple-900"
-        >
-          Send Message
-        </button>
-      </form>
-    </div>
-  </section>
-</Container>
+<div class="bg-gray-900 py-14 lg:py-0">
+  <Container>
+    <section id="contact" class="flex min-h-screen flex-col p-3 lg:p-20">
+      <h2 class="text-2xl font-extrabold text-gray-800 dark:text-gray-200 md:text-3xl lg:text-4xl">
+        Contact Me
+      </h2>
+      <p class="mt-5 text-gray-600 dark:text-gray-400 lg:text-justify">
+        If you have any questions, inquiries, or would like to discuss a project, feel free to reach
+        out using the form below or send me an email directly at <a
+          href="mailto:calum@mackenzie-chambers.co.uk"
+          class="text-purple-600 hover:text-purple-700 dark:text-purple-300 dark:hover:text-purple-400"
+          >calum@mackenzie-chambers.co.uk</a
+        >.
+      </p>
+      <div
+        class="mt-10 w-full self-center rounded-xl bg-white p-8 shadow-xl dark:bg-gray-800 lg:w-1/2"
+      >
+        <form name="contact" method="POST" data-netlify="true" class="flex flex-col">
+          <input type="hidden" name="form-name" value="contact" />
+          <label for="name" class="text-gray-800 dark:text-gray-200">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="mt-2 rounded border border-gray-300 bg-gray-100 p-2 text-gray-800 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+            required
+          />
+          <label for="email" class="mt-5 text-gray-800 dark:text-gray-200">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="mt-2 rounded border border-gray-300 bg-gray-100 p-2 text-gray-800 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+            required
+          />
+          <label for="message" class="mt-5 text-gray-800 dark:text-gray-200">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            class="mt-2 rounded border border-gray-300 bg-gray-100 p-2 text-gray-800 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-200"
+            required></textarea>
+          <button
+            type="submit"
+            class="mt-5 rounded bg-purple-600 px-4 py-2 font-semibold text-white hover:bg-purple-700 dark:bg-purple-800 dark:hover:bg-purple-900"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+  </Container>
+</div>
