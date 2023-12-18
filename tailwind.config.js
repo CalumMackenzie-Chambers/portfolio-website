@@ -62,9 +62,20 @@
             '0%, 100%': { opacity: 1 },
             '50%': { opacity: 0 },
           },
+          fadeInSlide: {
+            '0%': {
+              opacity: '0',
+              transform: 'translateY(-16px)',
+            },
+            '100%': {
+              opacity: '1',
+              transform: 'translateY(0)',
+            },
+          },
         },
         animation: {
           blink: "blink 1s step-end infinite",
+          fadeInSlide: 'fadeInSlide 0.2s ease-out',
         },
       },
     },
