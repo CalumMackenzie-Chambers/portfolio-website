@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://mackenzie-chambers.co.uk/sitemap.xml

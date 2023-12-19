@@ -2,6 +2,7 @@
   module.exports = {
     content: [
       "./src/index.html",
+      "./src/privacy-policy.html",
       "./src/js/**/*.{js,ts}",
     ],
     darkMode: 'class',
