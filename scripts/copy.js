@@ -37,4 +37,7 @@ function setupWatcher() {
 }
 
 initialCopy();
-setupWatcher();
+
+if (process.argv.includes('--watch')) {
+  setupWatcher();
+}

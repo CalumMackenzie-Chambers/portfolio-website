@@ -1,17 +1,19 @@
 {
   "type": "module",
   "scripts": {
-    "build:js": "esbuild src/js/index.js --bundle --outfile=dist/static/js/bundle.js --minify",
+    "build:js": "esbuild src/js/index.ts --bundle --target=chrome58,firefox57,safari11,edge16 --outfile=dist/static/js/bundle.js --minify",
     "build:css": "tailwindcss -i src/css/input.css -o dist/static/css/output.css --minify",
-    "build:copy": "cp src/index.html dist/index.html",
-    "build": "npm run build:js && npm run build:css && npm run copy",
-    "watch:js": "esbuild src/js/index.js --bundle --outfile=dist/static/js/bundle.js --watch",
+    "build:copy": "node ./scripts/copy.js",
+    "build": "concurrently \"npm run build:*\"",
+    "preview": "node ./scripts/live-server.js",
+    "watch:js": "esbuild src/js/index.ts --bundle --sourcemap --target=chrome58,firefox57,safari11,edge16 --outfile=dist/static/js/bundle.js --watch",
     "watch:css": "tailwindcss -i src/css/input.css -o dist/static/css/output.css --watch",
-    "watch:copy": "node ./scripts/copy.js",
-    "live-server": "node ./scripts/live-server.js",
+    "watch:copy": "node ./scripts/copy.js --watch",
+    "live-server": "node ./scripts/live-server.js --watch",
     "dev": "concurrently \"npm run watch:*\" \"npm run live-server\""
   },
   "devDependencies": {
+    "@types/node": "^20.10.5",
     "chokidar-cli": "^3.0.0",
     "concurrently": "^8.2.2",
     "esbuild": "0.19.9",
@@ -19,6 +21,7 @@
     "fs-extra": "^11.2.0",
     "lodash": "^4.17.21",
     "tailwindcss": "3.3.6",
+    "typescript": "^5.3.3",
     "ws": "^8.15.1"
   }
 }

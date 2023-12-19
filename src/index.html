@@ -24,42 +24,163 @@
 
     <link rel="stylesheet" type="text/css" href="/static/css/output.css" />
     <script src="/static/js/bundle.js" defer></script>
-
     <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "WebSite",
-        "name": "CalumDev",
-        "url": "https://mackenzie-chambers.co.uk/",
-        "description": "Web and software development services turning your ideas into reality",
-        "publisher": {
-          "@type": "Organization",
-          "name": "Mackenzie-Chambers",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://mackenzie-chambers.co.uk/static/images/logo.svg"
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "CalumDev",
+          "url": "https://mackenzie-chambers.co.uk/",
+          "description": "Custom Web and software development services",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Mackenzie-Chambers",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://mackenzie-chambers.co.uk/static/images/logo.svg"
+            }
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https://mackenzie-chambers.co.uk/"
+          },
+          "sameAs": [
+            "https://www.linkedin.com/in/calum-mackenzie-chambers",
+            "https://github.com/CalumMackenzie-Chambers"
+          ],
+          "creator": {
+            "@type": "Person",
+            "name": "Calum",
+            "url": "https://mackenzie-chambers.co.uk/#about",
+            "sameAs": [
+              "https://www.linkedin.com/in/yourLinkedInProfile"
+            ]
           }
         },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://mackenzie-chambers.co.uk/"
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Single Page Websites",
+          "provider": {
+            "@type": "Person",
+            "name": "Calum Mackenzie-Chambers"
+          },
+          "description": "Creation of single-page static portfolio or marketing product announcement sites.",
+          "priceRange": "£150 - £500"
         },
-        "sameAs": [
-          "https://www.linkedin.com/in/yourLinkedInProfile",
-          "https://www.github.com/yourGitHubProfile"
-        ],
-        "potentialAction": {
-          "@type": "ContactAction",
-          "target": "https://www.yourwebsite.com/contact"
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Multi Page Informational Websites",
+          "provider": {
+            "@type": "Person",
+            "name": "Calum Mackenzie-Chambers"
+          },
+          "description": "Development of multi-page informational sites without eCommerce functionalities.",
+          "priceRange": "from £1000"
         },
-        "creator": {
-          "@type": "Person",
-          "name": "Calum",
-          "url": "https://mackenzie-chambers.co.uk/#about",
-          "sameAs": [
-            "https://www.linkedin.com/in/yourLinkedInProfile"
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "serviceType": "Complex Software Systems",
+          "provider": {
+            "@type": "Person",
+            "name": "Calum Mackenzie-Chambers"
+          },
+          "description": "Custom software solutions including eCommerce systems and web applications. Contact for a free quote.",
+          "priceRange": "Contact for quote"
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a custom website cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The cost of a custom website varies based on complexity, features, and specific client needs. Prices can range from £150 for simple websites to tens of thousands of pounds for complex projects. For detailed pricing, refer to the pricing section or contact me for more information."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is your payment policy for web development projects?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For small and medium-sized projects, a 50% upfront payment is required, with the remaining 50% due upon completion. Custom projects may require different arrangements, which can be discussed to find a suitable solution."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take to build a website?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The timeline for building a website varies. Simple sites can be developed within 24 hours to a month, while complex custom solutions may take longer. Providing a full list of requirements will allow for a more accurate estimate."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide support and maintenance after the website is launched?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, I offer free bug fixes for life, provided the code remains unmodified by external sources. The advanced plan includes one year of premium support, with ongoing support available at an agreed monthly rate."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you help with website hosting and domain setup?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Absolutely. I assist in setting up hosting and configuring domains. I also offer hosting services for small to medium-sized projects. Large projects will involve an in-depth discussion on hosting strategy."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are your websites mobile-friendly and responsive?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, all websites I develop are fully responsive and mobile-friendly. I extensively test on a wide range of devices to ensure compatibility and a smooth user experience."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you follow SEO best practices when building a website?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Definitely. I incorporate SEO best practices into my web development process, focusing on site speed, mobile responsiveness, and semantic HTML to optimize for search engines."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What technologies do you specialize in for web development?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I specialize in modern web technologies including TailwindCSS, Go, DotNet, and more. The technology stack is chosen based on the specific requirements of each project."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can you integrate e-commerce functionalities into a website?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, I have extensive experience in integrating e-commerce functionalities into websites. For an example, you can refer to the Pharmica project."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you ensure website security and data protection?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Website security and data protection are top priorities in my development process. I adhere to EU GDPR regulations and implement advanced security measures to safeguard data."
+              }
+            }
           ]
         }
+      ]
+    </script>
+    <script>
+      if (localStorage.getItem('color-theme') === 'light') {
+        document.documentElement.classList.remove('dark')
       }
     </script>
   </head>
@@ -70,8 +191,8 @@
       <nav class="border-b bg-base-background/75 backdrop-blur">
         <div class="mx-auto xl:container px-6 md:px-12 lg:px-6">
           <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 right-0 flex items-center lg:hidden">
-              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-base-foreground hover:bg-muted-background focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <div class="absolute inset-y-0 right-0 flex items-center lg:hidden" id="menu-toggle">
+              <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-muted-foreground hover:text-base-foreground hover:bg-muted-background focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false" >
                 <span class="absolute -inset-0.5"></span>
                 <span class="sr-only">Open main menu</span>
                 <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
@@ -94,30 +215,66 @@
                   <a href="#" class="rounded hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Home</a>
                   <a href="#services" class="rounded hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Services</a>
                   <a href="#about" class="rounded hover:text-primary px-3 py-2 text-sm font-medium transition-colors">About</a>
-                  <a href="#projects" class="rounded hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Projects</a>
-                  <a href="https://brain.mackenzie-chambers.co.uk/" target="_blank" class="rounded hover:text-primary px-3 py-2 text-sm font-medium transition-colors flex space-x-2 w-fit items-center !ml-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
-                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                    </svg>
-                    <span class="block">Blog</span>
-                  </a>
+                  <a href="#faq" class="rounded hover:text-primary px-3 py-2 text-sm font-medium transition-colors">FAQs</a>
+                  <a href="#contact" class="rounded hover:text-primary px-3 py-2 text-sm font-medium transition-colors">Contact</a>
                 </div>
               </div>
             </div>
-            <div class="absolute inset-y-0 right-0 flex items-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0 space-x-2">
-              <a href="#" class="hidden lg:block rounded border hover:bg-muted-background hover:border-muted-background px-3 py-2 text-sm font-medium transition-colors">Github</a>
-              <a href="#" class="hidden lg:block rounded bg-primary hover:bg-primary-hover text-primary-foreground px-3 py-2 text-sm font-medium">Linked In</a>
+            <div class="absolute inset-y-0 left-0 lg:left-auto lg:right-0 flex items-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0 space-x-2 text-muted-foreground">
+              <button
+                id="theme-toggle"
+                type="button"
+                class="rounded border hover:border-primary-muted hover:shadow dark:hover:shadow-black px-3 py-2 text-sm font-medium transition-colors lg:flex space-x-2"
+                onclick="app.themeToggle(this)"
+                title="Switch to light theme"
+                >
+                <svg
+                  id="dark-icon"
+                  class="w-5 h-5 !ml-0 hidden"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                  >
+                  <path
+                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                  ></path>
+                </svg>
+                  <svg
+                    id="light-icon"
+                    class="w-5 h-5 !ml-0"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    >
+                    <path
+                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                    <span class="block sr-only lg:not-sr-only" id="theme-toggle-label">Light Mode</span>
+              </button>
+              <a href="https://github.com/CalumMackenzie-Chambers" target="_blank" rel="noopener nofollow" class="hidden rounded border hover:border-primary-muted hover:shadow dark:hover:shadow-black px-3 py-2 text-sm font-medium transition-colors lg:flex space-x-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="15.5" viewBox="0 0 496 512" class="fill-muted-foreground block"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                <span class="block">GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/calum-mackenzie-chambers/" target="_blank" rel="noopener nofollow" class="hidden rounded border hover:border-primary-muted hover:shadow dark:hover:shadow-black px-3 py-2 text-sm font-medium transition-colors lg:flex space-x-2 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" class="fill-muted-foreground block"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                <span class="block">LinkedIn</span>
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="hidden" id="mobile-menu">
-          <div class="space-y-1 px-2 pb-3 pt-2 text-muted-foreground bg-base-background">
-            <a href="#" class="bg-primary text-primary-foreground rounded block px-3 py-2 text-base font-medium" aria-current="page">Home</a>
-            <a href="#services" class="hover:bg-muted-background hover:text-base-foreground rounded block px-3 py-2 text-base font-medium">Services</a>
-            <a href="#about" class="hover:bg-muted-background hover:text-base-foreground rounded block px-3 py-2 text-base font-medium">About</a>
-            <a href="#projects" class="hover:bg-muted-background hover:text-base-foreground rounded block px-3 py-2 text-base font-medium">Projects</a>
-            <a href="https://brain.mackenzie-chambers.co.uk/" target="_blank" class="hover:bg-muted-background hover:text-base-foreground rounded block rounded-md px-3 py-2 text-base font-medium">Blog</a>
+        <div class="hidden absolute top-full inset-x-0 w-full border text-xl font-bold text-center" id="mobile-menu">
+          <div class="space-y-1 px-2 pb-3 pt-2 text-base-foreground bg-base-background/75 backdrop-blur">
+            <a href="#" class="hover:bg-muted-background hover:text-base-foreground rounded block px-3 py-3">Home</a>
+            <a href="#services" class="hover:bg-muted-background hover:text-base-foreground rounded block px-3 py-3">Services</a>
+            <a href="#about" class="hover:bg-muted-background hover:text-base-foreground rounded block px-3 py-3">About</a>
+            <a href="#projects" class="hover:bg-muted-background hover:text-base-foreground rounded block px-3 py-3">Projects</a>
+            <a href="#faq" class="hover:bg-muted-background hover:text-base-foreground rounded block px-3 py-3">FAQs</a>
+            <a href="#contact" class="hover:bg-muted-background hover:text-base-foreground rounded block px-3 py-3">Contact</a>
+            <a href="https://brain.mackenzie-chambers.co.uk/" target="_blank" rel="noopener noreferrer" class="hover:bg-muted-background hover:text-base-foreground rounded block rounded-md px-3 py-3">Blog</a>
           </div>
         </div>
       </nav>
@@ -153,19 +310,17 @@
             <p class="pt-4 lg:pt-8">Discover your digital potential.</p>
 
             <div class="grid grid-cols-2 gap-4 max-w-xs w-full mx-auto lg:ml-0" style="grid-gap:1rem">
-              <a aria-label="Send me an email" href="#" class="p-2 md:p-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover">
+              <a aria-label="Go to contact form" href="#contact" class="p-2 md:p-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover">
                 <div class="flex justify-center space-x-2">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3" />
                   </svg>
-                  <span class="font-semibold">Email</span>
+                  <span class="font-semibold">Contact</span>
                 </div>
               </a>
               <a aria-label="View my GitHub" href="#" class="p-2 md:p-4 border border-primary rounded duration-300 hover:shadow-lg hover:shadow-primary/20 bg-primary text-primary-foreground hover:bg-primary-hover">
-                <div class="flex justify-center space-x-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-                  </svg>
+                <div class="flex justify-center space-x-2 items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20" width="19" viewBox="0 0 496 512" class="fill-primary-foreground block"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
                   <span class="font-semibold">Github</span>
                 </div>
               </a>
@@ -249,11 +404,11 @@
                     <span class="ml-2">Analytics Integration</span>
                   </li>
                 </ul>
-                <a aria-label="Send me an email" href="#" class="p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit">
+                <a aria-label="Contact me" href="#contact" class="p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3" />
                   </svg>
-                  <span class="font-semibold block">Email</span>
+                  <span class="font-semibold block">Contact me</span>
                 </a>
               </div>
             </div>
@@ -313,11 +468,11 @@
                     <span class="ml-2">Blog / CMS integration</span>
                   </li>
                 </ul>
-                <a aria-label="Send me an email" href="#" class="p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit">
+                <a aria-label="Contact me" href="#contact" class="p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3" />
                   </svg>
-                  <span class="font-semibold block">Email</span>
+                  <span class="font-semibold block">Contact me</span>
                 </a>
               </div>
             </div>
@@ -377,11 +532,11 @@
                     <span class="ml-2">Advanced SEO Strategies</span>
                   </li>
                 </ul>
-                <a aria-label="Send me an email" href="#" class="p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit">
+                <a aria-label="Contact me" href="#contact" class="p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859M12 3v8.25m0 0l-3-3m3 3l3-3" />
                   </svg>
-                  <span class="font-semibold block">Email</span>
+                  <span class="font-semibold block">Contact me</span>
                 </a>
               </div>
             </div>
@@ -421,18 +576,18 @@
             <div class="absolute inset-0 bg-base-background rounded" aria-hidden="true"></div>
             <div class="relative before:pt-[56.25%] before:block">
               <picture>
-                  <source media="(min-width: 1536px)" srcset="/static/images/onevit-736.webp" type="image/webp">
-                  <source media="(min-width: 1536px)" srcset="/static/images/onevit-736.png" type="image/png">
-                  <source media="(min-width: 1025px)" srcset="/static/images/onevit-608.webp" type="image/webp">
-                  <source media="(min-width: 1025px)" srcset="/static/images/onevit-608.png" type="image/png">
-                <img src="/static/images/onevit-736.png" alt="Screenshot of Onevit project" class="absolute inset-0 rounded-t" loading="lazy">
+                <source media="(min-width: 1536px)" srcset="/static/images/onevit-736.webp" type="image/webp">
+                <source media="(min-width: 1536px)" srcset="/static/images/onevit-736.png" type="image/png">
+                <source media="(max-width: 1535px)" srcset="/static/images/onevit-608.webp" type="image/webp">
+                <source media="(max-width: 1535px)" srcset="/static/images/onevit-608.png" type="image/png">
+                <img src="/static/images/onevit-736.png" alt="Screenshot of Onevit project" class="absolute inset-0 rounded-t" loading="lazy" width="736" height="414">
               </picture>
               <h3 class="text-3xl px-6 font-extrabold py-4 bg-transparent border-b">Onevit</h3>
               <div class="py-4 px-6 space-y-2 text-muted-foreground">
                 <p class="sm:text-lg">Discover the dynamic essence of Onevit, a microsite crafted for the impactful launch of our newly rebranded product. This project showcases a refreshing departure from the previous iteration, embracing a visually rich design with fluid curves and playful illustrations.</p>
                 <p class="sm:text-lg">It's a testament to how a basic tier site can be transformed into a compelling digital experience</p>
 
-                <a aria-label="Visit OneVit website" href="https://onevit.co.uk/" target="_blank" class="!mt-6 p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit">
+                <a aria-label="Visit OneVit website" href="https://onevit.co.uk/" target="_blank" rel="noopener noreferrer" class="!mt-6 p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                   </svg>
@@ -461,7 +616,7 @@
                 <p class="sm:text-lg">Pharmica offers a seamless e-commerce experience, showcasing a cutting-edge platform for healthcare products. My role in its development has focused on creating intuitive user interfaces and optimizing performance for a broad customer base.</p>
                 <p class="sm:text-lg">This project is a great example of advanced-tier web development, blending modern technologies with user-centric design principles.</p>
 
-                <a aria-label="Visit Pharmica website" href="https://pharmica.co.uk/" target="_blank" class="!mt-6 p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit">
+                <a aria-label="Visit Pharmica website" href="https://pharmica.co.uk/" target="_blank" rel="noopener noreferrer" class="!mt-6 p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                   </svg>
@@ -473,22 +628,22 @@
 
           <!-- Brain -->
           <div class="relative max-w-xl md:max-w-none mx-auto rounded text-left row-span-3 shadow-lg shadow-muted-foreground dark:shadow-black">
-            <div class="absolute -inset-0.5 bg-gradient-to-r from-primary to-[#0891b2] rounded" aria-hidden="true"></div>
+            <div class="absolute -inset-0.5 bg-gradient-to-l from-primary to-[#0891b2] rounded" aria-hidden="true"></div>
             <div class="absolute inset-0 bg-base-background rounded" aria-hidden="true"></div>
             <div class="relative">
               <picture>
-                  <source media="(min-width: 1536px)" srcset="/static/images/brain-736.webp" type="image/webp">
-                  <source media="(min-width: 1536px)" srcset="/static/images/brain-736.png" type="image/png">
-                  <source media="(min-width: 1025px)" srcset="/static/images/brain-608.webp" type="image/webp">
-                  <source media="(min-width: 1025px)" srcset="/static/images/brain-608.png" type="image/png">
-                <img src="/static/images/brain-736.png" alt="Screenshot of Brain project" class="w-full h-auto rounded-t">
+                <source media="(min-width: 1536px)" srcset="/static/images/brain-736.webp" type="image/webp">
+                <source media="(min-width: 1536px)" srcset="/static/images/brain-736.png" type="image/png">
+                <source media="(max-width: 1535px)" srcset="/static/images/brain-608.webp" type="image/webp">
+                <source media="(max-width: 1535px)" srcset="/static/images/brain-608.png" type="image/png">
+                <img src="/static/images/brain-736.png" alt="Screenshot of Brain project" class="w-full h-auto rounded-t" loading="lazy" width="736" height="414">
               </picture>
               <h3 class="text-3xl px-6 font-extrabold py-4 bg-transparent border-b">Brain</h3>
               <div class="py-4 px-6 space-y-2 text-muted-foreground">
                 <p class="sm:text-lg">Brain is my personal digital repository, a space dedicated to capturing and sharing insights from my software development journey. Presently, it's a budding platform with select content, a live reflection of my continuous learning process.</p>
                 <p class="sm:text-lg"> Although updates are less frequent than I intend, Brain stands as a testament to my commitment to growth and knowledge sharing within the tech community.</p>
 
-                <a aria-label="Visit Brain Website" href="https://brain.mackenzie-chambers.co.uk/" target="_blank" class="!mt-6 p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit">
+                <a aria-label="Visit Brain Website" href="https://brain.mackenzie-chambers.co.uk/" target="_blank" rel="noopener noreferrer" class="!mt-6 p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                   </svg>
@@ -512,11 +667,9 @@
                   <li class="pb-2 sm:text-lg"><strong class="text-base-foreground">Web Image CLI</strong> - A tool to ease the pain of optimizing images</li>
                   <li class="sm:text-lg"><strong class="text-base-foreground">Musicala</strong> - A social media platform connection local musicians</li>
                 </ul>
-                <a aria-label="Visit My GitHub Page" href="https://brain.mackenzie-chambers.co.uk/" target="_blank" class="!mt-6 mb-4 p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-                  </svg>
-                  <span class="font-semibold">Github</span>
+                <a aria-label="Visit My GitHub Page" href="https://brain.mackenzie-chambers.co.uk/" target="_blank" rel="noopener noreferrer" class="!mt-6 mb-4 p-2 md:px-4 border-2 rounded duration-300 border-primary hover:shadow-lg hover:shadow-primary/20 text-primary hover:text-primary-hover hover:border-primary-hover flex space-x-2 w-fit items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="15.5" viewBox="0 0 496 512" class="fill-current"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                  <span class="font-semibold">GitHub</span>
                 </a>
               </div>
             </div>
@@ -529,7 +682,7 @@
     <section id="faq" class="w-full border-t text-left">
       <div class="xl:container m-auto px-6 md:px-12 lg:px-6 py-12 sm:py-20 lg:pb-28 xl:py-28">
         <h2 class="text-3xl lg:text-4xl font-black">FAQs</h2>
-        <h3 class="font-extrabold text-xl lg:text-2xl relative bg-clip-text text-transparent bg-gradient-to-r from-primary to-[#0891b2] w-fit pb-4">Lorem Ipsum FAQ</h3>
+        <h3 class="font-extrabold text-xl lg:text-2xl relative bg-clip-text text-transparent bg-gradient-to-r from-primary to-[#0891b2] w-fit pb-4">Essential Questions Answered</h3>
         <div>
 
           <details class="group border-b py-4 details-none">
@@ -543,7 +696,7 @@
                 </span>
               </div>
             </summary>
-            <p class="text-muted-foreground mt-3 ml-4 sm:text-lg group-open:animate-fadeInSlide">The cost of a custom website varies based on complexity, features, and specific client needs. You could have a simple webiste such as this one for as little as £150 but depending on the complexity websites can cost tens of thousands of pounds to build. For detailed pricing, please refer to our <a href="#services" class="text-primary hover:text-primary-hover">pricing section</a>. Alternatively if you already have a plan for your website you can fill out the contact form below and I will get back to you with further details.</p>
+            <p class="text-muted-foreground mt-3 ml-4 sm:text-lg group-open:animate-fadeInSlide">The cost of a custom website varies based on complexity, features, and specific client needs. You could have a simple website such as this one for as little as £150 but depending on the complexity websites can cost tens of thousands of pounds to build. For detailed pricing, please refer to our <a href="#services" class="text-primary hover:text-primary-hover">pricing section</a>. Alternatively if you already have a plan for your website you can fill out the contact form below and I will get back to you with further details.</p>
           </details>
 
           <details class="group border-b py-4 details-none">
@@ -655,7 +808,7 @@
                 </span>
               </div>
             </summary>
-            <p class="text-muted-foreground mt-3 ml-4 sm:text-lg group-open:animate-fadeInSlide">Yes, I have extensive experience in integrating a range of e-commerce functionalities into websites. For an example you can check out <a href="https://pharmica.co.uk/" target="_blank">Pharmica</a> where I am a part of building out features for their ecommerce platform</p>
+            <p class="text-muted-foreground mt-3 ml-4 sm:text-lg group-open:animate-fadeInSlide">Yes, I have extensive experience in integrating a range of e-commerce functionalities into websites. For an example you can check out <a href="https://pharmica.co.uk/" target="_blank" rel="noopener noreferrer">Pharmica</a> where I am a part of building out features for their ecommerce platform</p>
           </details>
 
           <details class="group border-b py-4 details-none">
@@ -676,14 +829,142 @@
     </section>
 
     <!-- Contact -->
-
-    <section id="faq" class="w-full border-t text-center">
+    <section id="contact" class="w-full border-t text-center">
       <div class="xl:container m-auto px-6 md:px-12 lg:px-6 py-12 sm:py-20 lg:pb-28 xl:py-28">
         <h2 class="text-3xl lg:text-4xl font-black">Contact</h2>
         <p class="font-extrabold text-xl lg:text-2xl relative bg-clip-text text-transparent bg-gradient-to-r from-primary to-[#0891b2] w-fit pb-12 mx-auto">For any quotes or enquiries</p>
+
+        <form name="contact" method="POST" data-netlify="true" class="max-w-3xl mx-auto p-8 relative text-left text-muted-foreground">
+          <div class="absolute -inset-0.5 bg-gradient-to-l from-primary to-[#0891b2] rounded" aria-hidden="true"></div>
+          <div class="absolute inset-0 bg-base-background rounded" aria-hidden="true"></div>
+          <div class="relative">
+            <div class="mb-4">
+              <label for="name" class="block text-sm font-medium">Name</label>
+              <input type="text" id="name" name="name" required class="mt-1 p-2 w-full border bg-transparent rounded text-base-foreground">
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-sm font-medium">Email</label>
+              <input type="email" id="email" name="email" required class="mt-1 p-2 w-full border bg-transparent rounded text-base-foreground">
+            </div>
+            <div class="mb-6">
+              <label for="message" class="block text-sm font-medium">Message</label>
+              <textarea id="message" name="message" rows="4" required class="mt-1 p-2 w-full border bg-transparent rounded text-base-foreground"></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="px-4 py-2 bg-primary font-bold text-primary-foreground rounded hover:bg-primary-hover">Send Message</button>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
 
+    <!-- Footer -->
+    <footer class="w-full border-t text-left">
+      <div class="xl:container m-auto px-6 md:px-12 lg:px-6 py-6 grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div class="flex flex-shrink-0 items-center pointer-events-none space-x-0.5 mx-auto col-span-2 md:col-span-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6 text-primary mb-0.5">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+          <div class="font-bold text-xl align-middle mb-1">Calum<span class="font-medium relative text-muted-foreground">Dev<span class="animate-blink border border-primary rounded-full relative top-1 ml-px inline-block h-6"></span></span></div>
+        </div>
+
+        <div class="mx-auto">
+          <p class="font-bold mb-2 text-lg">Navigation</p>
+          <ul class="text-muted-foreground">
+            <li>
+              <a href="#services" class="flex space-x-1.5 items-center py-1 group hover:text-base-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.121 7.629A3 3 0 0 0 9.017 9.43c-.023.212-.002.425.028.636l.506 3.541a4.5 4.5 0 0 1-.43 2.65L9 16.5l1.539-.513a2.25 2.25 0 0 1 1.422 0l.655.218a2.25 2.25 0 0 0 1.718-.122L15 15.75M8.25 12H12m9 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <span class="block group-hover:underline">Services</span>
+              </a>
+            </li>
+            <li>
+              <a href="#about" class="flex space-x-1.5 items-center py-1 group hover:text-base-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                </svg>
+                <span class="block group-hover:underline">About</span>
+              </a>
+            </li>
+            <li>
+              <a href="#projects" class="flex space-x-1.5 items-center py-1 group hover:text-base-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12a7.5 7.5 0 0 0 15 0m-15 0a7.5 7.5 0 1 1 15 0m-15 0H3m16.5 0H21m-1.5 0H12m-8.457 3.077 1.41-.513m14.095-5.13 1.41-.513M5.106 17.785l1.15-.964m11.49-9.642 1.149-.964M7.501 19.795l.75-1.3m7.5-12.99.75-1.3m-6.063 16.658.26-1.477m2.605-14.772.26-1.477m0 17.726-.26-1.477M10.698 4.614l-.26-1.477M16.5 19.794l-.75-1.299M7.5 4.205 12 12m6.894 5.785-1.149-.964M6.256 7.178l-1.15-.964m15.352 8.864-1.41-.513M4.954 9.435l-1.41-.514M12.002 12l-3.75 6.495" />
+                </svg>
+                <span class="block group-hover:underline">Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="#faq" class="flex space-x-1.5 items-center py-1 group hover:text-base-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                </svg>
+                <span class="block group-hover:underline">FAQs</span>
+              </a>
+            </li>
+            <li>
+              <a href="/privacy-policy" class="flex space-x-1.5 items-center py-1 group hover:text-base-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+                </svg>
+                <span class="block group-hover:underline">Privacy Policy</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Links -->
+        <div class="mx-auto">
+          <p class="font-bold mb-2 text-lg">Contact</p>
+          <ul class="text-muted-foreground">
+            <li>
+              <a href="https://www.linkedin.com/in/calum-mackenzie-chambers/" target="_blank" rel="noopener nofollow" class="flex space-x-1.5 items-center py-1 group hover:text-base-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="14" viewBox="0 0 448 512" class="fill-current"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                <span class="block group-hover:underline">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/CalumMackenzie-Chambers" target="_blank" rel="noopener nofollow" class="flex space-x-1.5 items-center py-1 group hover:text-base-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="15.5" viewBox="0 0 496 512" class="fill-muted-foreground block"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                <span class="block group-hover:underline">Github</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:calum@mackenzie-chambers.co.uk" class="flex space-x-1.5 items-center py-1 group hover:text-base-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 3.75H6.912a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H15M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859M12 3v8.25m0 0-3-3m3 3 3-3" />
+                </svg>
+                <span class="block group-hover:underline">Email</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://brain.mackenzie-chambers.co.uk/" target="_blank" rel="noopener noreferrer" class="flex space-x-1.5 items-center py-1 group hover:text-base-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                </svg>
+                <span class="block group-hover:underline">Blog</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="flex space-x-1.5 items-center py-1 group hover:text-base-foreground">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 0 1-2.555-.337A5.972 5.972 0 0 1 5.41 20.97a5.969 5.969 0 0 1-.474-.065 4.48 4.48 0 0 0 .978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25Z" />
+                </svg>
+                <span class="block group-hover:underline">Contact Form</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Copyright Notice -->
+      <div class="border-t text-center py-4">
+        <p class="text-muted-foreground text-sm">© 2023 Calum Mackenzie-Chambers. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div id="toast" class="px-6 py-4 bg-danger-muted border-danger border rounded fixed bottom-4 inset-x-0 mx-auto w-fit max-w-[90%] transition-opacity duration-1000 !opacity-0 !hidden text-center"></div>
   </body>
 </html>
 

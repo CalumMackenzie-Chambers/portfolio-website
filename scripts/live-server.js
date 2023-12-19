@@ -19,10 +19,12 @@ const sendReload = debounce(() => {
   });
 }, 100);
 
-watch('dist/**/*').on('change', () => {
-  console.log('Changes detected. Waiting for stabilization...');
-  sendReload();
-});
+if (process.argv.includes('--watch')) {
+  watch('dist/**/*').on('change', () => {
+    console.log('Changes detected. Waiting for stabilization...');
+    sendReload();
+  });
+}
 
 server.listen(port, () => {
   console.log(`Live server running at http://localhost:${port}`);
