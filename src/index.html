@@ -5,6 +5,7 @@
     <title>CalumDev - Custom Web & Software Development Services</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="Calum - Dev specializes in custom web and software development services tailored to bring your innovative ideas to life." />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline';">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -904,12 +905,12 @@
               </a>
             </li>
             <li>
-              <a href="/privacy-policy" class="flex space-x-1.5 items-center py-1 group hover:text-base-foreground">
+              <button onclick="app.loadModal('/privacy-policy')" class="flex space-x-1.5 items-center py-1 group hover:text-base-foreground">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-4 h-4">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
                 </svg>
                 <span class="block group-hover:underline">Privacy Policy</span>
-              </a>
+              </button>
             </li>
           </ul>
         </div>
@@ -965,6 +966,20 @@
     </footer>
 
     <div id="toast" class="px-6 py-4 bg-danger-muted border-danger border rounded fixed bottom-4 inset-x-0 mx-auto w-fit max-w-[90%] transition-opacity duration-1000 !opacity-0 !hidden text-center"></div>
+
+    <div id="modal-overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 h-full w-full px-6 justify-center items-center z-50" onclick="app.closeModal()">
+      <div id="modal" class="my-auto px-6 shadow-lg dark:shadow-black border rounded bg-base-background bg-opacity-100 max-h-[calc(100%-9rem)] overflow-y-auto overscroll-contain relative" onclick="event.stopPropagation()">
+        <div class="sticky top-0 -inset-x-6 -mx-6 px-6 flex justify-between py-4 bg-base-background border-b space-x-4 mb-4 items-center">
+          <h2 id="modal-title" class="text-2xl font-bold text-base-foreground">Modal Title</h2>
+          <button id="modal-close" class="text-2xl rounded-full h-5 w-5 flex justify-center items-center text-base-foreground hover:bg-danger transition-colors duration-200 focus:outline-none" onclick="app.closeModal()">&times;</button>
+        </div>
+        <div id="modal-content"></div>
+        <div class="border-t py-4 text-center -mx-6 px-6 mt-4">
+          <p class="text-muted-foreground text-sm">© 2023 Calum Mackenzie-Chambers. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
 
